@@ -1,21 +1,19 @@
-# -*- coding: utf-8 -*-
 """
-Created on Sun Aug 23 17:22:13 2020
-
-@author: saura
+Regular Expression 2中包含使用Regex101来进行regular expression查询
 """
 import re
 
 string = "this is a really cool string really!"
+print('search' in string)    #This print will get you a True bool. 
 
-a = re.search('really',string)
+a = re.search('really',string)   # Over here you wanna search is if 'really' is in string.
 print(a)
 
 # the below 4 commands will give error if the searching string does not exist.
-print(a.span())
-print(a.start())
+print(a.span())     # will tells you where the strings are as tuple, eg. (10, 16)
+print(a.start())    # will show where the string starts: 10
 print(a.end())
-print(a.group())
+print(a.group())    # will show you if the search appears in the string. Very useful if you wanna search to if a word exist and where it exists. 
 
 pattern = re.compile('really')
 
