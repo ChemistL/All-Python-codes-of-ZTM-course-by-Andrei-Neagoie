@@ -6,7 +6,7 @@ Created on Sun Aug 23 18:18:40 2020
 """
 import re
 
-email_pattern = re.compile(r"([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
+email_pattern = re.compile(r"([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")  # email pattern的格式来源于Regex，在regex上直接搜索即可
 check_email = email_pattern.fullmatch('saurabh_1089@gmail.com')
 
 password_patter = re.compile(r"([a-zA-Z0-9@#$%]{8,}$)")
