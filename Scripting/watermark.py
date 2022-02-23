@@ -12,7 +12,7 @@ output = PyPDF2.PdfFileWriter()
 
 for i in range(template.getNumPages()):
   page = template.getPage(i)
-  page.mergePage(watermark.getPage(0))
+  page.mergePage(watermark.getPage(0)) # only merge the pages you want with watermark
   output.addPage(page)
 
 with open('./Watermark/watermarked_output.pdf', 'wb') as file:
