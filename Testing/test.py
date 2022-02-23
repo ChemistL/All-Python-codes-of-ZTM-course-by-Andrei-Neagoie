@@ -36,3 +36,4 @@ if __name__ == '__main__':
 
 class B:
     print("Class B")
+
