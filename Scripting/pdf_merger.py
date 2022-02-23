@@ -10,9 +10,9 @@ import sys
 inputs = sys.argv[1:]   # this will stores all the arguments passes except the first one, and store them in a list
 
 def pdf_merger(pdf_list):
-    merger = PyPDF2.PdfFileMerger()
+    merger = PyPDF2.PdfFileMerger() # merge object is created
     for pdf in pdf_list:
-        merger.append(pdf)
+        merger.append(pdf) #append all pdf on the list in this loop until the last one is done
     merger.write('./PDF/merged.pdf')
 
 pdf_merger(inputs)
