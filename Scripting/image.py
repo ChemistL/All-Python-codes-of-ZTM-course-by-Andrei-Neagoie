@@ -6,8 +6,8 @@ print(img.format)
 print(img.size)
 print(img.mode)
 
-filtered_img = img.filter(ImageFilter.BLUR)
-filtered_img.save("./Pokedex/blur.png", "png")
+filtered_img = img.filter(ImageFilter.BLUR)     //This will provide a image with blurring 
+filtered_img.save("./Pokedex/blur.png", "png")    //New file called blur.png is made, which is pretty blur
 
 filtered_img = img.filter(ImageFilter.SMOOTH)
 filtered_img.save("./Pokedex/smooth.png", "png")
